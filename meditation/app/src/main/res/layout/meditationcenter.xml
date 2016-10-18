@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/vv_meditationbackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl_dummy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_meditationsoundcontrol"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp">
+
+            <ImageView
+                android:id="@+id/iv_stop"
+                android:background="@drawable/stopbutton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/pb_progressbar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center_vertical" />
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical">
+                <ProgressBar
+                    android:id="@+id/pb_progressbar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:text="@string/app_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/but_pauseAndPlay"
+                android:background="@drawable/pausebutton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/pb_progressbar"
+                android:layout_alignRight="@+id/iv_nature"
+                android:layout_alignEnd="@+id/iv_nature"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+
+            <ImageView
+                android:id="@+id/iv_voice"
+                android:background="@drawable/voicebutton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/iv_nature"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
+
+            <SeekBar
+                android:id="@+id/sb_voicecontrol"
+                android:layout_width="257dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:id="@+id/iv_nature"
+                android:background="@drawable/naturebutton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="64dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/but_voiceControl"
+            android:background="@drawable/voicecontrol"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>
