@@ -64,6 +64,7 @@ public class experience extends AppCompatActivity {
         {
             Intent i = new Intent(experience.this, startbreathing.class);
             startActivity(i);
+            finish();
         }
     };
 }

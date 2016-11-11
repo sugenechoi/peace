@@ -102,6 +102,7 @@ public class startbreathing extends AppCompatActivity
         {
             Intent i = new Intent(startbreathing.this, PreShortMeditation.class);
             startActivity(i);
+            finish();
         }
     };
 }

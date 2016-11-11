@@ -27,6 +27,7 @@ public class PreShortMeditation extends Activity
         {
             Intent i = new Intent(PreShortMeditation.this, MeditationCenter.class);
             startActivity(i);
+            finish();
         }
     };
 }
